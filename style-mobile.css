@@ -1,0 +1,327 @@
+/* ------------- Navbar ------------*/
+nav{
+    height: 15vh;
+    padding:  0% 5%;
+    z-index: 100;
+
+}
+
+.nav-body{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 90%;
+    height: 80vh;
+    top: 15vh;
+    border-radius: 5px;
+    padding: 0%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.603);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.15s all ease-in;
+}
+
+.nav-body.active{
+    transform: scaleX(1);
+    transition: 0.15s all ease-in;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    min-width: 100px;
+    color: black;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.list li p{
+    color: var(--Very-dark-gray-blue);
+    opacity: 0.7;
+    transition: 0.15s ease-in all;
+    cursor: pointer;
+}
+
+nav .nav-item{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    padding: 1%;
+}
+
+nav .nav-header{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-header .chevron{
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--Light-red);
+}
+
+
+nav .sub-list{
+    display: flex;
+    transform: scaleY(0);
+    transform-origin:Top;
+}
+
+nav .sub-list.appear{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    width: 90%;
+    padding: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.336);
+    background: rgb(231, 231, 231);
+    color: var(--Very-dark-gray-blue);
+    opacity: 0.7;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scaleY(1);
+    transition: 0.15s all ease-in;
+    z-index: 100;
+}
+
+.list li p::after{
+    border-bottom: solid 2px #000000;  
+}
+
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.288);
+    margin-left: 0;
+    margin-top: auto;
+}
+
+.btn-section .login-btn{
+    color: black;
+}
+
+.btn-section .signup-btn{
+    color: white;
+    width: 25%;
+    background: linear-gradient(to right, var(--Very-light-red) 0%,var(--Light-red) 100%);
+}
+
+.bars-container{
+    display: block;
+    color: white;
+    width: fit-content;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 105;
+}
+
+
+
+
+/* ------------- First Section ------------*/
+
+.first-section{
+    background-image: url('./images/bg-pattern-intro-mobile.svg'),
+    linear-gradient(to right, var(--Very-light-red) 0%,var(--Light-red) 100%);
+    background-position: top 35% left 30%,
+    center;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+.first-section h1{
+    font-size: 38px;
+    text-align: center;
+    width: 90%;
+    font-weight: 500;
+}
+
+.first-section p{
+    width: 80%;
+    text-align: center;
+}
+
+/* ------------- Second Section ------------*/
+.second-section{
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0%;
+    overflow-y: hidden;
+    padding: 0% 0%;
+}
+
+.second-section img{
+    position: inherit;
+    align-self: center;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 5vh;
+}
+
+.second-section .container{
+    display: flex;
+    margin-right: 0px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.second-section .title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.second-section .paragraphs-container{
+    width: 90%;
+    min-height: 200px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.paragraphs-container p,
+.paragraphs-container h1{
+    width: 100%;
+}
+
+/* ------------- Third Section ------------*/
+
+#sc-3{
+    height: 120vh;
+    min-height: 110vh;
+    margin-top: 100px;
+    position: relative;
+}
+.third-section{
+    background-image: url('./images/bg-pattern-circles.svg'),
+    linear-gradient(to right, var(--Very-dark-gray-blue) 0%,var(--Very-dark-desaturated-blue) 100%);
+    background-position: top -300px left 50%, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30vh;
+}
+
+.third-section img{
+    width: 90%;
+    position: inherit;
+    bottom: 10%;
+    
+}
+
+.third-section div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third-section div p{
+    width: 90%;
+    min-width: 250px;
+}
+
+/* ------------- Fourth Section ------------*/
+
+#sc-4{
+    height: fit-content;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+
+.fourth-section{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+}
+
+.fourth-section .paragraphs-container{
+    height: 100%;
+    width: 90%;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ------------- Footer ------------*/
+
+#footer{
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .img-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+
+}
+
+#footer img{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top:0;
+}
+
+#footer .footer-list{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    row-gap: 4vh;
+    margin-bottom: 5vh;
+}
+
+.footer-list .sub-list{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2vh;
+    margin-top: 3vh;
+    
+}
+
+.footer-list .sub-list div{
+    width: fit-content;
+    text-align: center;
+}
